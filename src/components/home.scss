@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Fira+Sans:wght@400;900&family=Major+Mono+Display&family=Mukta:wght@200&family=The+Nautigal&display=swap');
+
+
+
+.home{
+    display: flex;
+    flex-direction: column;
+
+    .ersection{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: #131030;
+        z-index: 1;
+
+        .fixedsection{
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            color: white;
+
+            .fixedleft{
+                position: absolute;
+                bottom: 0;
+                left: 40px;
+                span{
+                    letter-spacing: 10px;
+                    font-size: 20px;
+                    font-family: Mukta;
+                    writing-mode: vertical-lr;
+                }
+                
+            }
+
+            .fixedleftScroll{
+                position: absolute;
+                bottom: -1000px;
+                left: 40px;
+                span{
+                    letter-spacing: 10px;
+                    font-size: 20px;
+                    font-family: Mukta;
+                    writing-mode: vertical-lr;
+                }
+                transition: 0.8s;
+            }
+        }
+
+        .title{
+            position: absolute;
+            left: 150px;
+            z-index: -1;
+
+            h1{
+                font-family: The Nautigal;
+                color: white;
+                font-size: 90px;
+            }
+            h2{
+                text-align: center;
+                color: white;
+                font-family: Mukta;
+                font-size: 24px;
+            }
+        }
+     }
+        .imagenes{
+            display: flex;
+            justify-content: center;
+            width: 40vw;
+
+            img{
+                width: 100%;
+                right: 60px;
+                min-width: 350px;
+                overflow: hidden;
+                transition: 0.4s;
+            }
+            h1{
+                text-align: center;
+                z-index: 1 ;
+                position: relative;
+                color: white;
+                font-size: 90px;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .dasection{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #131030;
+        .imgda{
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+
+            img{
+                width: 220px;
+            }
+        }
+        .infda{
+            width: 30vw;
+            border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 2;
+            
+            h1{
+                font-size: 90px;
+                color: rgb(255, 255, 255);
+                font-family: The Nautigal;
+            }
+            h3{
+                color: rgb(255, 255, 255);
+                font-family: mukta;
+                text-align: center;
+            }
+            button{
+                margin-top: 15px;
+                width: 200px;
+                border: 1px solid white;
+                border-radius: 8px;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                padding: 10px;
+                font-family: mukta;
+
+            }
+            button{
+                background-color: white;
+                color: black;
+                transition: 0.4s;
+            }
+        }
+        .pruebita{
+            display: flex;
+            z-index: 3;
+        }
+    }
+
+
+@media screen and (max-width: 900px){
+    .home{
+        .ersection{
+            display: flex;
+            justify-content: center;
+            flex-direction: column-reverse;
+
+            .title{
+                position: static;
+                margin-top: 35px;
+            }
+        }
+        .dasection{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            .imgda{
+                img{
+                    width: 130px;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+

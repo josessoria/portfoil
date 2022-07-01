@@ -1,0 +1,33 @@
+.fixedsection{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    color: rgb(255, 0, 0);
+
+    .fixedleft{
+        position: absolute;
+        bottom: 0;
+        left: 40px;
+        span{
+            letter-spacing: 10px;
+            font-size: 20px;
+            font-family: Mukta;
+            writing-mode: vertical-lr;
+        }
+        
+    }
+
+    .fixedleftScroll{
+        position: absolute;
+        bottom: -1000px;
+        left: 40px;
+        span{
+            letter-spacing: 10px;
+            font-size: 20px;
+            font-family: Mukta;
+            writing-mode: vertical-lr;
+        }
+        transition: 0.8s;
+    }
+}
