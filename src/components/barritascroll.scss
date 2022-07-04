@@ -5,6 +5,7 @@
     z-index: -1;
     color: rgb(255, 0, 0);
 
+
     .fixedleft{
         position: absolute;
         bottom: 0;
@@ -13,9 +14,9 @@
             letter-spacing: 10px;
             font-size: 20px;
             font-family: Mukta;
-            writing-mode: vertical-lr;
+            writing-mode: vertical;
         }
-        
+        transition: 0.8s;
     }
 
     .fixedleftScroll{

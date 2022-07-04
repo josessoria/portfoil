@@ -1,12 +1,12 @@
-import React from "react";
-import {Link} from "react-router-dom"
+import React, {useState} from "react";
 import moon from "../img/moon.svg";
 import { Fade } from "react-reveal";
 import nave1 from "../img/astronaut.svg";
 import Particle from "./particle.jsx";
 import Barritascroll from "./barritascroll";
-import {motion} from "framer-motion"
 import "./home.scss";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function Home() {
   document.addEventListener("mousemove", parallax);
@@ -19,9 +19,10 @@ function Home() {
     });
   }
 
+  
   return (
-    <motion.div className="home" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>
-      <div className="ersection">
+    <div className="home">
+      <motion.div className="ersection section" id="home">
         <Particle />
         <Barritascroll />
         <div className="title">
@@ -31,8 +32,15 @@ function Home() {
         <div className="imagenes">
           <img src={moon} alt="" className="object" data-value="10" />
         </div>
-      </div>
-      <div className="dasection" id="asd">
+      </motion.div>
+      <motion.div
+        className="dasection section"
+        id="aboutme"
+        initial={{ scaleY: 0 }}
+        animate={{ scaleY: 1 }}
+        exit={{ scaleY: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <Fade left>
           <div className="imgda">
             {" "}
@@ -43,13 +51,13 @@ function Home() {
           <div className="infda">
             <h1>Aboutme</h1>
             <h3>Me encanta programar, la tecnologia y el deporte.</h3>
-
-            <Link to="/" className="a">asd</Link>
+            <Link to="/About" className="button">
+              About
+            </Link>
           </div>
         </Fade>
-      </div>
-
-    </motion.div>
+      </motion.div>
+    </div>
   );
 }
 

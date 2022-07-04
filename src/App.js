@@ -1,16 +1,13 @@
 import "./App.scss";
 import Navbar from "./components/navbar.jsx";
-import Animation from "./components/animationpage";
-import { BrowserRouter } from "react-router-dom";
+import Animated from "./components/animatedroutes"
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <BrowserRouter>
-        <Animation />
-      </BrowserRouter>
-    </div>
+    <>
+    <Navbar />
+    <Animated/>
+    </>
   );
 }
 

@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import "./navbar.scss";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { FaHamburger } from "react-icons/fa";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { NavLink, BrowserRouter } from "react-router-dom";
+import { BsGithub, BsLinkedin } from "react-icons/bs"
+import {Link} from "react-router-dom"
+import cv from "../img/cv.pdf"
 
 function Navbar() {
   const [click, setClick] = useState(true);
@@ -15,31 +16,21 @@ function Navbar() {
     <div>
       <div className={click ? "navegacionactive" : "navegacion"}>
         <div className="navegaciondentro">
-          <BrowserRouter path="/">
-            <NavLink to="/about" onClick={burguer}>About</NavLink>
-            {/* <a href="#" onClick={burguer}>
-              Works
-            </a>
-            <a href="#" onClick={burguer}>
-              About Me
-            </a>
-            <a href="#" onClick={burguer}>
-              Contact
-            </a> */}
-          </BrowserRouter>
+          <Link to="/" onClick={burguer}>Home</Link>
+          <Link to="/About" onClick={burguer}>About Me</Link>
         </div>
       </div>
       <div className="navbar">
-        <h1>Jose Soria</h1>
+        <Link to="/" className="Link"><h1>Jose Soria</h1></Link>
         <div className="wrap">
           <div className="icons">
-            <a href="#asd" rel="noopener noreferrer">
+            <a href="https://github.com/josessoria" rel="noopener noreferrer">
               <BsGithub />
             </a>
-            <a href="asd" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/josessoria/" target="_blank" rel="noopener noreferrer">
               <BsLinkedin />
             </a>
-            <a href="asd" target="_blank">
+            <a href={cv} target="_blank" rel="noreferrer">
               Curriculum
             </a>
           </div>
