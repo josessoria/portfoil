@@ -1,10 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Fira+Sans:wght@400;900&family=Major+Mono+Display&family=Mukta:wght@200&family=The+Nautigal&display=swap');
 
-
+html{
+    scroll-snap-type: y mandatory;
+    background-color: #131030;
+}
 
 .home{
     display: flex;
     flex-direction: column;
+    
+    .section{
+        scroll-snap-align: start;
+
+    }
+
+    .imagenes{
+        display: flex;
+        justify-content: center;
+        width: 40vw;
+
+        img{
+            width: 100%;
+            right: 60px;
+            min-width: 350px;
+            overflow: hidden;
+            transition: 0.4s;
+        }
+        h1{
+            text-align: center;
+            z-index: 1 ;
+            position: relative;
+            color: white;
+            font-size: 90px;
+            text-transform: uppercase;
+        }
+    }
 
     .ersection{
         width: 100%;
@@ -15,12 +45,14 @@
         align-items: center;
         background-color: #131030;
         z-index: 1;
+        
+        
 
         .fixedsection{
             position: fixed;
             width: 100vw;
             height: 100vh;
-            z-index: -1;
+            z-index: -2;
             color: white;
 
             .fixedleft{
@@ -53,7 +85,6 @@
         .title{
             position: absolute;
             left: 150px;
-            z-index: -1;
 
             h1{
                 font-family: The Nautigal;
@@ -68,28 +99,6 @@
             }
         }
      }
-        .imagenes{
-            display: flex;
-            justify-content: center;
-            width: 40vw;
-
-            img{
-                width: 100%;
-                right: 60px;
-                min-width: 350px;
-                overflow: hidden;
-                transition: 0.4s;
-            }
-            h1{
-                text-align: center;
-                z-index: 1 ;
-                position: relative;
-                color: white;
-                font-size: 90px;
-                text-transform: uppercase;
-            }
-        }
-    }
     .dasection{
         width: 100%;
         height: 100vh;
@@ -149,6 +158,68 @@
             z-index: 3;
         }
     }
+    .tersection{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #131030;
+        .imgda{
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+
+            img{
+                width: 220px;
+                transition: 0.2s;
+            }
+        }
+        .infda{
+            width: 30vw;
+            border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 2;
+            
+            h1{
+                font-size: 90px;
+                color: rgb(255, 255, 255);
+                font-family: The Nautigal;
+            }
+            h3{
+                color: rgb(255, 255, 255);
+                font-family: mukta;
+                text-align: center;
+            }
+            .button{
+                margin-top: 15px;
+                width: 200px;
+                border: 1px solid white;
+                border-radius: 8px;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                padding: 10px;
+                font-family: mukta;
+
+            }
+            .button:hover{
+                background-color: white;
+                color: black;
+                transition: 0.4s;
+            }
+        }
+        .pruebita{
+            display: flex;
+            z-index: 3;
+        }
+    }
+    }
+
 
 
 @media screen and (max-width: 900px){

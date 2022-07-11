@@ -24,7 +24,7 @@ function Navbar() {
         <Link to="/" className="Link"><h1>Jose Soria</h1></Link>
         <div className="wrap">
           <div className="icons">
-            <a href="https://github.com/josessoria" rel="noopener noreferrer">
+            <a href="https://github.com/josessoria" target="_blank" rel="noopener noreferrer">
               <BsGithub />
             </a>
             <a href="https://www.linkedin.com/in/josessoria/" target="_blank" rel="noopener noreferrer">

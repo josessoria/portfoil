@@ -21,7 +21,7 @@
         font-family: Arsenal;
         color: white;
     }
-    
+
     .wrap{
         display: flex;
         .icons{
@@ -112,7 +112,11 @@
 }
 
 @media screen and (max-width: 600px){
-    #root > div > div:nth-child(1) > div.navbar > div > div.icons{
-        display: none;
+    .navbar{
+        .wrap{
+            .icons{
+                display: none;
+            }
+        }
     }
 }

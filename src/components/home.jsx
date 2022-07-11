@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import moon from "../img/moon.svg";
 import { Fade } from "react-reveal";
 import nave1 from "../img/astronaut.svg";
@@ -19,16 +19,23 @@ function Home() {
     });
   }
 
-  
   return (
     <div className="home">
-      <motion.div className="ersection section" id="home">
+      <motion.div
+        className="ersection section"
+        id="home"
+        initial={{ width: "200%"}}
+        animate={{ width: "100%" }}
+        exit={{ x: "100%", transition: { duration: 0.1 } }}>
         <Particle />
         <Barritascroll />
-        <div className="title">
-          <h1>Jose Soria</h1>
-          <h2>Full Stack Developer</h2>
-        </div>
+        <Fade bottom>
+          <div className="title">
+            <h1>Jose Soria</h1>
+            <h2>Full Stack Developer</h2>
+          </div>
+        </Fade>
+
         <div className="imagenes">
           <img src={moon} alt="" className="object" data-value="10" />
         </div>
@@ -36,12 +43,34 @@ function Home() {
       <motion.div
         className="dasection section"
         id="aboutme"
-        initial={{ scaleY: 0 }}
-        animate={{ scaleY: 1 }}
-        exit={{ scaleY: 0 }}
-        transition={{ duration: 0.5 }}
+        initial={{ width: 0 }}
+        animate={{ width: "100%" }}
+        exit={{ x: window.innerWidth, transition: { duration: 0.4 } }}
       >
         <Fade left>
+          <div className="imgda">
+            {" "}
+            <img src={nave1} alt="" className="object" data-value="-10" />
+          </div>
+        </Fade>
+        <Fade top>
+          <div className="infda">
+            <h1>Aboutme</h1>
+            <h3>Me encanta programar, la tecnologia y el deporte.</h3>
+            <Link to="/About/" className="button">
+              About
+            </Link>
+          </div>
+        </Fade>
+      </motion.div>
+      <motion.div
+        className="tersection section"
+        id="aboutme"
+        initial={{ width: 0 }}
+        animate={{ width: "100%" }}
+        exit={{ x: window.innerWidth, transition: { duration: 0.4 } }}
+      >
+        <Fade rigth>
           <div className="imgda">
             {" "}
             <img src={nave1} alt="" className="object" data-value="-10" />

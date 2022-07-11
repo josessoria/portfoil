@@ -1,0 +1,19 @@
+.flecha{
+    position: fixed;
+    color: white;
+    top: 150px;
+    left: 40px;
+    z-index: 2;
+   
+
+    Link{
+        color: white;
+        text-decoration: none;
+    }
+}
+
+#root > div:nth-child(2) > div.flecha > a > svg{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
