@@ -4,7 +4,7 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import { FaHamburger } from "react-icons/fa";
 import { BsGithub, BsLinkedin } from "react-icons/bs"
 import {Link} from "react-router-dom"
-import cv from "../img/cv.pdf"
+import cv from "../../img/cv.pdf"
 
 function Navbar() {
   const [click, setClick] = useState(true);
@@ -18,6 +18,7 @@ function Navbar() {
         <div className="navegaciondentro">
           <Link to="/" onClick={burguer}>Home</Link>
           <Link to="/About" onClick={burguer}>About Me</Link>
+          <Link to="/projects" onClick={burguer}>Projects</Link>
         </div>
       </div>
       <div className="navbar">

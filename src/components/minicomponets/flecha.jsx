@@ -5,7 +5,7 @@ import {Link} from "react-router-dom"
 
 function flecha() {
   return (
-    <div className='flecha'><Link to="/#aboutme"><AiOutlineArrowLeft/></Link></div>
+    <div className='flecha'><Link to="/"><AiOutlineArrowLeft/></Link></div>
   )
 }
 

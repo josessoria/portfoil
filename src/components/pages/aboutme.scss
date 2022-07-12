@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Fira+Sans:wght@400;900&family=Major+Mono+Display&family=Mingzat&family=Mukta:wght@200&family=The+Nautigal&display=swap');
+
+.bodyy{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.aboutme{
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .cuadrado{
+        h1{
+            font-size: 70px;
+            font-family: The Nautigal;
+            color: white;
+        }
+        h2{
+            font-size: 30px;
+            font-family: Mukta;
+            font-weight: 300;
+            color: white;
+            text-align: center;
+        }
+    }
+}
+
+.timeline{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    background-color: #433e7200;
+    margin-bottom: 100px;
+    justify-content: center;
+
+
+
+
+
+    .numerador{
+        
+        display: flex;
+        position: absolute;
+        left: 0;
+
+        .barr{
+            letter-spacing: -10px;
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+            margin-right: 15px;
+        }
+        .numbarr{
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+            margin-right: 15px;
+        }
+    }
+
+    .infor{
+        width: 90%;
+        display: flex;
+        margin: 0 150px;
+        justify-content: space-between;
+        
+
+        .titleinfo{
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+            font-family: 'Mingzat', sans-serif;
+            padding: 0;
+            font-weight: 800;
+
+        }
+    
+        .info{
+            color: white;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            font-family: Mukta;
+            text-align:center;
+
+            span{
+                margin-top: 15px;
+            }
+            h1{
+                font-size: 30px;
+            }
+        }
+
+    }
+
+}
+
+.timeline2{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    margin-bottom: 100px;
+    background-color: #13103000;
+    justify-content: center;
+
+    .numerador{
+        
+        display: flex;
+        position: absolute;
+        left: 0;
+
+        .barr{
+            letter-spacing: -10px;
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+            margin-right: 15px;
+        }
+        .numbarr{
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+            margin-right: 15px;
+        }
+    }
+
+    .infor{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 150px;
+        justify-content: space-between;
+
+        .titleinfo{
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+            font-family: 'Mingzat', sans-serif;
+            padding: 0;
+            font-weight: 800;
+
+        }
+    
+        .info{
+            color: white;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            font-family: Mukta;
+            margin-top: 50px;
+
+
+            .prueba{
+                background-color: rgba(255, 255, 255, 0.719);
+                padding: 15px;
+                border-radius: 10px;
+                text-align: center;
+                min-width: 100px;
+                width: 29.75%;
+                transition: 0.2s;
+                color: rgb(24, 26, 56);
+                svg{
+                    font-size: 120px;
+                }
+            }
+
+            .prueba:hover{
+                transform: scale(1.1);
+                transition: 0.2s;
+                cursor: pointer;
+            }
+
+            span{
+                margin-top: 15px;
+            }
+            h1{
+                font-size: 30px;
+            }
+        }
+
+    }
+}
+
+.timeline3{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    margin-bottom: 100px;
+    background-color: #13103000;
+    justify-content: center;
+
+    .numerador{
+        
+        display: flex;
+        position: absolute;
+        left: 0;
+
+        .barr{
+            letter-spacing: -10px;
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+            margin-right: 15px;
+        }
+        .numbarr{
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+            margin-right: 15px;
+        }
+    }
+
+    .infor{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 150px;
+        text-align: start;
+        align-items: center;
+
+        .span{
+            width: 100%;
+            display: flex;
+        }
+
+
+        .titleinfo{
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+            font-family: 'Mingzat', sans-serif;
+            padding: 0;
+            font-weight: 800;
+
+        }
+    
+        .info{
+            color: white;
+            width:90%;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            flex-wrap: wrap;
+            font-family: Mukta;
+            margin-top: 50px;
+
+
+
+            .icon{
+                background-color: rgb(255, 255, 255);
+                width: 80px;
+                height: 80px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                margin: 30px 40px;
+                transition: 0.2s;
+
+                span{
+                    margin: 0;
+                    color: black;
+
+                }
+
+                svg{
+                    font-size: 40px;
+                    color: black;
+                }
+            }
+            .icon:hover{
+                transform: scale(1.1);
+                transition: 0.2s;
+                cursor: pointer;
+            }
+
+            .prueba:hover{
+                transform: scale(1.1);
+                transition: 0.2s;
+                cursor: pointer;
+            }
+
+            span{
+                margin-top: 15px;
+            }
+            h1{
+                font-size: 30px;
+            }
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 900px){
+    .timeline{
+        .infor{
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            
+        }
+    }
+
+    .timeline2{
+        .infor{
+            margin: 0;
+            align-items: center;
+            .info{
+                max-width: 500px;
+                width: 100%;
+                .prueba{
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+            
+        }
+    }
+    .timeline3{
+        .infor{
+            margin: 0;
+            align-items: center;
+            .span{
+                display: flex;
+                justify-content: center;
+            }
+            .info{
+                max-width: 500px;
+                width: 100%;
+                .prueba{
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+            
+        }
+    }
+
+}
+@media screen and (max-width: 490px){
+    .timeline{
+        .numerador{
+            .barr{
+                font-size: 10vw;
+            }
+            .numbarr{
+                font-size: 10vw;
+            }
+        }
+        .infor{
+            margin: 0;
+            .titleinfo{
+                font-size: 6vw;
+            }
+            .info{
+                width: 100%;
+                padding: 15px;
+            }
+        }
+    }
+    .timeline2{
+        .numerador{
+            .barr{
+                font-size: 10vw;
+            }
+            .numbarr{
+                font-size: 10vw;
+            }
+        }
+        .infor{
+            margin: 0;
+            .titleinfo{
+                font-size: 6vw;
+            }
+            .info{
+                width: 100%;
+                padding: 15px;
+            }
+        }
+    }
+    .timeline3{
+        .numerador{
+            .barr{
+                font-size: 10vw;
+            }
+            .numbarr{
+                font-size: 10vw;
+            }
+        }
+        .infor{
+            margin: 0;
+            .titleinfo{
+                font-size: 6vw;
+            }
+            .info{
+                width: 100%;
+                padding: 15px;
+            }
+        }
+    }
+
+
+}
+

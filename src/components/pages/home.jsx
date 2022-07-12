@@ -1,12 +1,14 @@
-import React, { useState } from "react";
-import moon from "../img/moon.svg";
+import React from "react";
+import moon from "../../img/moon.svg";
+import planet from "../../img/planet.svg"
 import { Fade } from "react-reveal";
-import nave1 from "../img/astronaut.svg";
-import Particle from "./particle.jsx";
-import Barritascroll from "./barritascroll";
+import nave1 from "../../img/astronaut.svg";
+import Particle from "../configs/particle";
+import Barritascroll from "../minicomponets/barritascroll";
 import "./home.scss";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+
 
 function Home() {
   document.addEventListener("mousemove", parallax);
@@ -43,10 +45,10 @@ function Home() {
       <motion.div
         className="dasection section"
         id="aboutme"
-        initial={{ width: 0 }}
-        animate={{ width: "100%" }}
-        exit={{ x: window.innerWidth, transition: { duration: 0.4 } }}
-      >
+        initial={{ width: 0}}
+        animate={{ width: "100%"}}
+        exit={{ x: "10%"}}>
+      
         <Fade left>
           <div className="imgda">
             {" "}
@@ -56,7 +58,7 @@ function Home() {
         <Fade top>
           <div className="infda">
             <h1>Aboutme</h1>
-            <h3>Me encanta programar, la tecnologia y el deporte.</h3>
+            <h3>I like to develop, technology and sports.</h3>
             <Link to="/About/" className="button">
               About
             </Link>
@@ -73,19 +75,22 @@ function Home() {
         <Fade rigth>
           <div className="imgda">
             {" "}
-            <img src={nave1} alt="" className="object" data-value="-10" />
+            <img src={planet} alt="" className="object" data-value="10" />
           </div>
         </Fade>
         <Fade top>
           <div className="infda">
-            <h1>Aboutme</h1>
-            <h3>Me encanta programar, la tecnologia y el deporte.</h3>
-            <Link to="/About" className="button">
-              About
+            <h1>Projects</h1>
+            <h3>some of my projects</h3>
+            <Link to="/projects" className="button">
+              Projects
             </Link>
           </div>
+    
         </Fade>
+        
       </motion.div>
+
     </div>
   );
 }
