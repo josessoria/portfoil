@@ -7,13 +7,13 @@
 }
 
 .aboutme{
-
     height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 277px;
 
     .cuadrado{
         h1{
@@ -32,7 +32,7 @@
 }
 
 .timeline{
-    background-color: rgb(255, 255, 255);
+
     width: 100%;
     display: flex;
     background-color: #433e7200;
@@ -184,6 +184,7 @@
 }
 
 .timeline3{
+
     background-color: rgb(255, 255, 255);
     width: 100%;
     display: flex;

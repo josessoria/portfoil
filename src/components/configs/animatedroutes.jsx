@@ -6,6 +6,7 @@ import { AnimatePresence } from "framer-motion";
 import Slide from "../pages/projects"
 
 
+
 function Animatedroutes() {
   const location = useLocation();
 

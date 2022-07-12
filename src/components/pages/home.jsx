@@ -1,14 +1,16 @@
 import React from "react";
 import moon from "../../img/moon.svg";
-import planet from "../../img/planet.svg"
+import planet from "../../img/planet.svg";
 import { Fade } from "react-reveal";
+import Rocket from "../../img/rocket.svg";
 import nave1 from "../../img/astronaut.svg";
 import Particle from "../configs/particle";
 import Barritascroll from "../minicomponets/barritascroll";
+
+
 import "./home.scss";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
 
 function Home() {
   document.addEventListener("mousemove", parallax);
@@ -26,9 +28,10 @@ function Home() {
       <motion.div
         className="ersection section"
         id="home"
-        initial={{ width: "200%"}}
+        initial={{ width: "200%" }}
         animate={{ width: "100%" }}
-        exit={{ x: "100%", transition: { duration: 0.1 } }}>
+        exit={{ x: "200%", transition: { duration: 0.4 } }}
+      >
         <Particle />
         <Barritascroll />
         <Fade bottom>
@@ -39,20 +42,20 @@ function Home() {
         </Fade>
 
         <div className="imagenes">
-          <img src={moon} alt="" className="object" data-value="10" />
+          <img src={moon} alt="" className="object" data-value="7" />
         </div>
       </motion.div>
       <motion.div
         className="dasection section"
         id="aboutme"
-        initial={{ width: 0}}
-        animate={{ width: "100%"}}
-        exit={{ x: "10%"}}>
-      
-        <Fade left>
+        initial={{ width: "200%" }}
+        animate={{ width: "100%" }}
+        exit={{ x: "200%", transition: { duration: 0.4 } }}
+      >
+        <Fade bottom>
           <div className="imgda">
             {" "}
-            <img src={nave1} alt="" className="object" data-value="-10" />
+            <img src={Rocket} alt="" className="object" data-value="10" />
           </div>
         </Fade>
         <Fade top>
@@ -68,16 +71,17 @@ function Home() {
       <motion.div
         className="tersection section"
         id="aboutme"
-        initial={{ width: 0 }}
+        initial={{ width: "200%" }}
         animate={{ width: "100%" }}
-        exit={{ x: window.innerWidth, transition: { duration: 0.4 } }}
+        exit={{ x: "200%", transition: { duration: 0.4 } }}
       >
-        <Fade rigth>
+        <Fade bottom>
           <div className="imgda">
             {" "}
-            <img src={planet} alt="" className="object" data-value="10" />
+            <img src={planet} alt="" className="object" data-value="-10" />
           </div>
         </Fade>
+
         <Fade top>
           <div className="infda">
             <h1>Projects</h1>
@@ -86,11 +90,33 @@ function Home() {
               Projects
             </Link>
           </div>
-    
         </Fade>
-        
       </motion.div>
+      <motion.div
+        className="tersection section"
+        id="aboutme"
+        initial={{ width: "200%" }}
+        animate={{ width: "100%" }}
+        exit={{ x: "200%", transition: { duration: 0.4 } }}
+      >
+        <Fade bottom>
+          <div className="imgda">
+            {" "}
+            <img src={planet} alt="" className="object" data-value="-10" />
+          </div>
+        </Fade>
 
+        <Fade top>
+          <div className="infda">
+            <h1>Projects</h1>
+            <h3>some of my projects</h3>
+            <Link to="/projects" className="button">
+              Projects
+            </Link>
+          </div>
+        </Fade>
+      </motion.div>
+ 
     </div>
   );
 }

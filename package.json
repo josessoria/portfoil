@@ -10,6 +10,7 @@
     "aos": "^2.3.4",
     "bourbon": "^7.2.0",
     "framer-motion": "^6.3.16",
+    "jquery": "^3.6.0",
     "matter-js": "^0.18.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

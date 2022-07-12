@@ -4,6 +4,8 @@ import "./aboutme.scss";
 import { motion } from "framer-motion";
 import Flecha from "../minicomponets/flecha";
 import Fade from "react-reveal/Fade";
+import Barritascroll from "../minicomponets/barritascroll";
+import ScrollToTop from "../configs/test"
 
 
 import {
@@ -24,16 +26,18 @@ function Aboutme() {
   return (
     <motion.div
       className=""
-      initial={{ width: 0 }}
+      initial={{ width: "50%" }}
       animate={{ width: "100%" }}
-      exit={{ x: "-100%", transition: { duration: 0.1 } }}
+      exit={{ x: "-100%", transition: { duration: 0.3 } }}
       // initial={{width: 0}}
       // animate={{width:"100%"}}
       // exit={{x: window.innerWidth, transition:{duration:0.1}}}
     >
+      <ScrollToTop></ScrollToTop>
       <Flecha />
       <Particle />
       <div className="aboutme" id="a">
+      <Barritascroll/>
         <div className="cuadrado">
           <h1>About Me</h1>
         </div>
