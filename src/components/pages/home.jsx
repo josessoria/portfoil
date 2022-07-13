@@ -4,9 +4,9 @@ import planet from "../../img/planet.svg";
 import { Fade } from "react-reveal";
 import Rocket from "../../img/rocket.svg";
 import nave1 from "../../img/astronaut.svg";
+import contact from "../../img/contact.svg"
 import Particle from "../configs/particle";
 import Barritascroll from "../minicomponets/barritascroll";
-
 
 import "./home.scss";
 import { motion } from "framer-motion";
@@ -21,6 +21,8 @@ function Home() {
       var y = (e.clientY * moving_value) / 130;
       move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
     });
+
+    
   }
 
   return (
@@ -93,7 +95,7 @@ function Home() {
         </Fade>
       </motion.div>
       <motion.div
-        className="tersection section"
+        className="contactsection"
         id="aboutme"
         initial={{ width: "200%" }}
         animate={{ width: "100%" }}
@@ -102,21 +104,25 @@ function Home() {
         <Fade bottom>
           <div className="imgda">
             {" "}
-            <img src={planet} alt="" className="object" data-value="-10" />
+            <img src={contact} alt="" className="object" data-value="-10" />
           </div>
         </Fade>
-
-        <Fade top>
-          <div className="infda">
-            <h1>Projects</h1>
-            <h3>some of my projects</h3>
-            <Link to="/projects" className="button">
-              Projects
-            </Link>
-          </div>
-        </Fade>
+        <div className="infda">
+          <h1>Contact Me</h1>
+          <form
+            action="https://formsubmit.co/ddd4c819e8daf052168687c9b8db6f45"
+            className="form"
+            method="POST"
+            id="formulario"
+          >
+            <input type="text" name="name" id="name" placeholder="name" />
+            <input type="text" name="razon" required placeholder="asunto" />
+            <input type="email" name="email" required placeholder="email" />
+            <textarea name="textarea" placeholder="text" cols="30" rows="10"></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
       </motion.div>
- 
     </div>
   );
 }
