@@ -18,7 +18,7 @@ import {
   FaNodeJs,
   FaNpm,
 } from "react-icons/fa";
-import { SiAltiumdesigner, SiRedux, SiPostgresql } from "react-icons/si";
+import { SiAltiumdesigner, SiRedux, SiPostgresql,SiExpress,SiFirebase } from "react-icons/si";
 import { CgGym } from "react-icons/cg";
 import { IoLogoJavascript, IoLogoHtml5 } from "react-icons/io";
 
@@ -172,6 +172,16 @@ function Aboutme() {
                 {" "}
                 <IoLogoJavascript />
                 <span>Javascript</span>
+              </div>
+              <div className="icon">
+                {" "}
+                <SiExpress />
+                <span>Express</span>
+              </div>
+              <div className="icon">
+                {" "}
+                <SiFirebase />
+                <span>Firebase</span>
               </div>
               <div className="icon">
                 {" "}
